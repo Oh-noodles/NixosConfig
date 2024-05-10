@@ -5,6 +5,7 @@
 
   home.packages = with pkgs; [
     gnomeExtensions.advanced-alttab-window-switcher
+    (nerdfonts.override { fonts = [ "DroidSansMono" ]; })
   ];
 
   home.stateVersion = "23.11";

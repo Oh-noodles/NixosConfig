@@ -12,6 +12,11 @@
     ./trouble.nix
     ./diffview.nix
     ./whichkey.nix
+    ./notify.nix
+    ./dressing.nix
+    ./lualine.nix
+    ./noice.nix
+    ./indent-blankline.nix
     ./keymaps.nix
   ];
 
