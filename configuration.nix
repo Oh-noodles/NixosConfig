@@ -59,6 +59,8 @@
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
+  services.input-remapper.enable = true;
+
   # Enable sound with pipewire.
   sound.enable = true;
   hardware.pulseaudio.enable = false;
@@ -104,6 +106,13 @@
   ];
 
   environment.variables.EDITOR = "vim";
+  environment.variables = {
+    INPUT_METHOD = "fcitx";
+    GTK_IM_MODULE = "fcitx";
+    QT_IM_MODULE = "fcitx";
+    XMODIFIERS = "@im=fcitx";
+    SDL_IM_MODULE = "fcitx";
+  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
@@ -133,5 +142,5 @@
   system.stateVersion = "23.11"; # Did you read the comment?
 
   # Enable virtualbox
-  virtualisation.virtualbox.guest.enable = true;
+  # virtualisation.virtualbox.guest.enable = true;
 }

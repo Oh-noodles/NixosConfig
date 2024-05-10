@@ -10,6 +10,7 @@
     ./telescope.nix
     ./treesitter.nix
     ./trouble.nix
+    ./diffview.nix
     ./whichkey.nix
     ./keymaps.nix
   ];
