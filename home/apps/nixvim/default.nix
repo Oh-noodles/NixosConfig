@@ -27,5 +27,11 @@
     colorschemes.catppuccin = {
       enable = true;
     };
+    autoCmd = [
+      #{
+      #  event = [ "UIEnter" ];
+      #  command = "lua require('persistence').load()";
+      #}
+    ];
   };
 }

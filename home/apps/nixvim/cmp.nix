@@ -21,6 +21,8 @@
         mapping = {
           "<C-Space>" = "cmp.mapping.complete()";
           "<C-bs>" = "cmp.mapping.abort()";
+          "<up>" = "cmp.mapping.select_prev_item()";
+          "<down>" = "cmp.mapping.select_next_item()";
           "<CR>" = "cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Insert, select = true })";
         };
       };
