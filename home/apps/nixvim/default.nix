@@ -17,6 +17,8 @@
     ./lualine.nix
     ./noice.nix
     ./indent-blankline.nix
+    ./floaterm.nix
+    ./persistence.nix
     ./keymaps.nix
   ];
 

@@ -29,5 +29,16 @@
       key = "<C-l>";
       action = "<cmd>wincmd l<cr>";
     }
+    {
+      key = "<C-/>";
+      mode = [ "n" "t" ];
+      action = "<cmd>FloatermToggle<cr>";
+    }
+    # vim registers <C-/> as <C-_>, so we set it too
+    {
+      key = "<C-_>";
+      mode = [ "n" "t" ];
+      action = "<cmd>FloatermToggle<cr>";
+    }
   ];
 }

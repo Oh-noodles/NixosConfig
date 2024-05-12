@@ -4,6 +4,8 @@
   home.homeDirectory = "/home/huangqiang";
 
   home.packages = with pkgs; [
+    distrobox
+    clang
     gnomeExtensions.advanced-alttab-window-switcher
     (nerdfonts.override { fonts = [ "DroidSansMono" ]; })
   ];

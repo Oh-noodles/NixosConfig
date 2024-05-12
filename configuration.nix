@@ -141,6 +141,8 @@
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "23.11"; # Did you read the comment?
 
+  virtualisation.docker.enable = true;
+
   # Enable virtualbox
   # virtualisation.virtualbox.guest.enable = true;
 }
