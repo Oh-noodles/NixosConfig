@@ -4,13 +4,14 @@
     number = true;
     relativenumber = true;
 
-    # autoindent = true;
+    autoindent = true;
 
     expandtab = true;
     tabstop = 2;
     softtabstop = 2;
+    shiftwidth = 2;
 
-    # smartindent = true;
-    # breakindent = true;
+    smartindent = true;
+    breakindent = true;
   };
 }
