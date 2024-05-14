@@ -7,7 +7,7 @@
     distrobox
     clang
     gnomeExtensions.advanced-alttab-window-switcher
-    (nerdfonts.override { fonts = [ "DroidSansMono" ]; })
+    (nerdfonts.override { fonts = [ "Hack" ]; })
   ];
 
   home.stateVersion = "23.11";

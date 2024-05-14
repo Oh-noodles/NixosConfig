@@ -18,13 +18,15 @@
     ./noice.nix
     ./indent-blankline.nix
     ./floaterm.nix
+    ./todo-comments.nix
     ./persistence.nix
     ./keymaps.nix
   ];
-
+ 
   programs.nixvim = {
     enable = true;
-    colorschemes.catppuccin = {
+    # colorschemes.dracula = {
+    colorschemes.cyberdream = {
       enable = true;
     };
     autoCmd = [
