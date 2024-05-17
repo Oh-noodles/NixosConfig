@@ -4,6 +4,7 @@
   home.homeDirectory = "/home/huangqiang";
 
   home.packages = with pkgs; [
+    tree
     distrobox
     clang
     gnomeExtensions.advanced-alttab-window-switcher

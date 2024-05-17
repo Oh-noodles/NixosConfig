@@ -60,6 +60,7 @@
   services.printing.enable = true;
 
   services.input-remapper.enable = true;
+  services.locate.enable = true;
 
   # Enable sound with pipewire.
   sound.enable = true;

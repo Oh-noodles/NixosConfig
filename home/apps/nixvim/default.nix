@@ -20,6 +20,9 @@
     ./floaterm.nix
     ./todo-comments.nix
     ./persistence.nix
+    ./spectre.nix
+    ./flash.nix
+    ./gitsigns.nix
     ./keymaps.nix
   ];
  
@@ -28,6 +31,10 @@
     # colorschemes.dracula = {
     colorschemes.cyberdream = {
       enable = true;
+      settings.theme.highlights = {
+        LineNr.fg = "#dbdbdb";
+        CursorLineNr.fg = "#ffffff";
+      };
     };
     autoCmd = [
       #{

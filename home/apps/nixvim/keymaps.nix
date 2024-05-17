@@ -40,6 +40,10 @@
       action = "<cmd>vertical resize +2<cr>";
     }
     {
+      key = "<leader>sr";
+      action = "<cmd>lua require('spectre').toggle()cr>";
+    }
+    {
       key = "<leader>cd";
       mode = [ "n" ];
       action = "<cmd>lua vim.diagnostic.open_float()<cr>";
