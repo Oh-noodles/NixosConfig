@@ -23,6 +23,8 @@
     ./spectre.nix
     ./flash.nix
     ./gitsigns.nix
+    ./neogit.nix
+    ./markdown.nix
     ./keymaps.nix
   ];
  
