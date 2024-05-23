@@ -35,7 +35,8 @@
       enable = true;
       settings.theme.highlights = {
         LineNr.fg = "#dbdbdb";
-        CursorLineNr.fg = "#ffffff";
+        # CursorLineNr.fg = "#ffffff";
+        CursorLine.bg = "#2d3036";
       };
     };
     autoCmd = [
