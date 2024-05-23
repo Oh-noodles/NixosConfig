@@ -40,10 +40,18 @@
       };
     };
     autoCmd = [
-      #{
-      #  event = [ "UIEnter" ];
-      #  command = "lua require('persistence').load()";
-      #}
+      {
+       event = [ "FileType" ];
+       command = "lua require('telescope').setup({
+          defaults = {
+            mappings = {
+              n = {
+                ['dd'] = require('telescope.actions').delete_buffer,
+              }
+            }
+          }
+        })";
+      }
     ];
   };
 }
