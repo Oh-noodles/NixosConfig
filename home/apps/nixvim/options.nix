@@ -13,5 +13,7 @@
 
     smartindent = true;
     breakindent = true;
+
+    cursorline = true;
   };
 }

@@ -35,14 +35,23 @@
       enable = true;
       settings.theme.highlights = {
         LineNr.fg = "#dbdbdb";
-        CursorLineNr.fg = "#ffffff";
+        # CursorLineNr.fg = "#ffffff";
+        CursorLine.bg = "#2d3036";
       };
     };
     autoCmd = [
-      #{
-      #  event = [ "UIEnter" ];
-      #  command = "lua require('persistence').load()";
-      #}
+      {
+       event = [ "FileType" ];
+       command = "lua require('telescope').setup({
+          defaults = {
+            mappings = {
+              n = {
+                ['dd'] = require('telescope.actions').delete_buffer,
+              }
+            }
+          }
+        })";
+      }
     ];
   };
 }
