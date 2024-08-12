@@ -59,6 +59,11 @@
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
+  services.openssh = {
+    enable = true;
+    passwordAuthentication = true;
+  };
+
   services.input-remapper.enable = true;
   services.locate.enable = true;
 
@@ -131,7 +136,7 @@
   # services.openssh.enable = true;
 
   # Open ports in the firewall.
-  # networking.firewall.allowedTCPPorts = [ ... ];
+  networking.firewall.allowedTCPPorts = [ 8080 3000 ];
   # networking.firewall.allowedUDPPorts = [ ... ];
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;

@@ -5,6 +5,8 @@
     relativenumber = true;
 
     autoindent = true;
+    foldmethod = "indent";
+    foldenable = false;
 
     expandtab = true;
     tabstop = 2;

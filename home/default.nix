@@ -8,6 +8,7 @@
     distrobox
     gnomeExtensions.advanced-alttab-window-switcher
     (nerdfonts.override { fonts = [ "Hack" ]; })
+    noto-fonts-cjk
   ];
 
   home.stateVersion = "23.11";
