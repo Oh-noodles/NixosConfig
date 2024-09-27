@@ -9,6 +9,8 @@
     gnomeExtensions.advanced-alttab-window-switcher
     (nerdfonts.override { fonts = [ "Hack" ]; })
     noto-fonts-cjk
+    conda
+    google-chrome
   ];
 
   home.stateVersion = "23.11";

@@ -52,8 +52,9 @@
 
   # Configure keymap in X11
   services.xserver = {
-    layout = "us";
-    xkbVariant = "";
+    xkb.layout = "us";
+    # xkbVariant = "";
+    xkb.variant = "";
   };
 
   # Enable CUPS to print documents.
@@ -61,7 +62,11 @@
 
   services.openssh = {
     enable = true;
-    passwordAuthentication = true;
+    # passwordAuthentication = true;
+    settings = {
+      PasswordAuthentication = true;
+    }
+    ;
   };
 
   services.input-remapper.enable = true;
@@ -111,6 +116,7 @@
   environment.systemPackages = with pkgs; [
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget curl vim git
+    gparted
   ];
 
   environment.variables.EDITOR = "vim";
