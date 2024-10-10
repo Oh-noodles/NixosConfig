@@ -11,6 +11,7 @@
     noto-fonts-cjk
     conda
     google-chrome
+    rofi
   ];
 
   home.stateVersion = "23.11";
