@@ -10,8 +10,8 @@
     (nerdfonts.override { fonts = [ "Hack" ]; })
     noto-fonts-cjk
     conda
-    google-chrome
     rofi
+    brave
   ];
 
   home.stateVersion = "23.11";
