@@ -116,6 +116,7 @@
   environment.systemPackages = with pkgs; [
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget curl vim git
+    xorg.xhost
     gparted
   ];
 
@@ -159,4 +160,21 @@
 
   # Enable virtualbox
   virtualisation.virtualbox.guest.enable = true;
+
+
+  systemd.user.services.my-startup = {
+    enable = true;
+    description = "...";
+    serviceConfig.PassEnvironment = "DISPLAY";
+    serviceConfig.RemainAfterExit = true;
+    script = ''
+      cd /run/current-system/sw/bin
+      # sleep 30
+      date > ~/.my-startup-log 2>&1
+      ./xhost +si:localuser:$USER >> ~/.my-startup-log 2>&1
+    '';
+    #wantedBy = [ "multi-user.target" ]; # starts after login
+    wantedBy = [ "multi-user.target" "graphical-session.target" ];
+    partOf = [ "graphical-session.target" ];
+  };
 }
