@@ -2,7 +2,7 @@
   programs.nixvim.keymaps = [
     {
       key = "<leader>e";
-      action = "<CMD>Neotree toggle<CR>";
+      action = "<CMD>NvimTreeToggle<CR>";
     }
     {
       key = "<leader>cf";

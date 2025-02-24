@@ -7,7 +7,7 @@
   programs.zsh = {
     enable = true;
     shellAliases = {
-      nvim = "nvim -c \"lua require('persistence').load() require('neo-tree.command').execute({ toggle = true })\"";
+      nvim = "nvim -c \"lua require('persistence').load()\"";
     };
     initExtra = ''
       # lines here wiil add to .zshrc

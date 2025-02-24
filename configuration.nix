@@ -171,6 +171,7 @@
       cd /run/current-system/sw/bin
       # sleep 30
       date > ~/.my-startup-log 2>&1
+      # fix distrobox prolbem
       ./xhost +si:localuser:$USER >> ~/.my-startup-log 2>&1
     '';
     #wantedBy = [ "multi-user.target" ]; # starts after login
