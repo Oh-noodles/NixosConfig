@@ -7,11 +7,16 @@
     tree
     distrobox
     gnomeExtensions.advanced-alttab-window-switcher
-    (nerdfonts.override { fonts = [ "Hack" ]; })
-    noto-fonts-cjk
+    # (nerdfonts.override { fonts = [ "Hack" ]; })
+    pkgs.nerd-fonts.hack
+    noto-fonts-cjk-sans
     conda
     rofi
     brave
+
+    gcc
+    cmake
+    gnumake
   ];
 
   home.stateVersion = "23.11";
