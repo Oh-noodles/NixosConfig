@@ -1,14 +1,14 @@
 { config, pkgs, ... }:
 {
-  home.username = "huangqiang";
-  home.homeDirectory = "/home/huangqiang";
+  home.username = "joe";
+  home.homeDirectory = "/home/joe";
 
   home.packages = with pkgs; [
     tree
     distrobox
     gnomeExtensions.advanced-alttab-window-switcher
-    # (nerdfonts.override { fonts = [ "Hack" ]; })
-    pkgs.nerd-fonts.hack
+    (nerdfonts.override { fonts = [ "Hack" ]; })
+    # pkgs.nerd-fonts.hack
     noto-fonts-cjk-sans
     conda
     rofi
