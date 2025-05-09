@@ -125,7 +125,24 @@
     wget curl vim git
     xorg.xhost
     gparted
+
+    (nerdfonts.override { fonts = [ "Hack" ]; })
+    # pkgs.nerd-fonts.hack
   ];
+
+  fonts.packages = with pkgs; [
+    noto-fonts-cjk-sans
+    noto-fonts-cjk-serif
+  ];
+
+  fonts.fontconfig.antialias = true;
+  fonts.fontconfig.hinting.enable = true;
+  fonts.fontconfig.defaultFonts = {
+    serif = [ "Noto Serif CJK SC" ];
+    sansSerif = [ "Noto Sans CJK SC" ];
+    monospace = [ "Noto Sans CJK SC" ];
+    emoji = [ "Noto Sans CJK SC" ];
+  };
 
   environment.variables.EDITOR = "vim";
   environment.variables = {
@@ -134,6 +151,11 @@
     QT_IM_MODULE = "fcitx";
     XMODIFIERS = "@im=fcitx";
     SDL_IM_MODULE = "fcitx";
+  };
+
+  programs.appimage = {
+    enable = true;
+    binfmt = true;
   };
 
   # Some programs need SUID wrappers, can be configured further or are

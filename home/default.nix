@@ -6,13 +6,15 @@
   home.packages = with pkgs; [
     tree
     distrobox
-    gnomeExtensions.advanced-alttab-window-switcher
-    (nerdfonts.override { fonts = [ "Hack" ]; })
-    # pkgs.nerd-fonts.hack
+    # gnomeExtensions.advanced-alttab-window-switcher
     noto-fonts-cjk-sans
     conda
     rofi
     brave
+
+    appimage-run
+    vscode
+    simplescreenrecorder
 
     gcc
     cmake
