@@ -15,6 +15,7 @@
     appimage-run
     vscode
     simplescreenrecorder
+    thunderbird
 
     gcc
     cmake

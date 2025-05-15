@@ -7,6 +7,7 @@
         clangd.enable = true;
         nixd.enable = true;
         html.enable = true;
+        pylsp.enable = true;
       };
       keymaps.lspBuf = {
         "gd" = "definition";

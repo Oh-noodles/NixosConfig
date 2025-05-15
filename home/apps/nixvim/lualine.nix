@@ -1,5 +1,5 @@
 {
   programs.nixvim.plugins.lualine = {
-    enable = true;
+    enable = false; # conflict with nvim-tree's window picker, disable it temporary
   };
 }

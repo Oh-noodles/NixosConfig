@@ -70,5 +70,15 @@
       mode = [ "n" "t" ];
       action = "<cmd>FloatermToggle<cr>";
     }
+    {
+      key = "<";
+      mode = [ "v" "n" "o" ];
+      action = "<gv";
+    }
+    {
+      key = ">";
+      mode = [ "v" "n" "o" ];
+      action = ">gv";
+    }
   ];
 }
