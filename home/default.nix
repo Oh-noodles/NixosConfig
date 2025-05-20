@@ -20,6 +20,8 @@
     gcc
     cmake
     gnumake
+    nodejs_23
+    xclip # so we could copy from nvim to system clipboard
   ];
 
   home.stateVersion = "23.11";

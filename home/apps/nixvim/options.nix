@@ -17,5 +17,6 @@
     breakindent = true;
 
     cursorline = true;
+    clipboard = "unnamedplus";
   };
 }
