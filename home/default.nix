@@ -22,6 +22,10 @@
     gnumake
     nodejs_23
     xclip # so we could copy from nvim to system clipboard
+
+    blender
+    # (blender.override { cudaSupport = true; })
+    python314
   ];
 
   home.stateVersion = "23.11";

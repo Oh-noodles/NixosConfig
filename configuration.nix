@@ -114,6 +114,7 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.cudaSupport = true;
 
   # Enable the Flakes feature
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -125,6 +126,8 @@
     wget curl vim git
     xorg.xhost
     gparted
+    freetype
+    # nvidia-container-toolkit
 
     (nerdfonts.override { fonts = [ "Hack" ]; })
     # pkgs.nerd-fonts.hack
@@ -186,6 +189,7 @@
   system.stateVersion = "24.11"; # Did you read the comment?
 
   virtualisation.docker.enable = true;
+  hardware.nvidia-container-toolkit.enable = true;
 
   # Enable virtualbox
   virtualisation.virtualbox.guest.enable = true;
