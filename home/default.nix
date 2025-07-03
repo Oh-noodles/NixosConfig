@@ -8,6 +8,7 @@
     distrobox
     # gnomeExtensions.advanced-alttab-window-switcher
     noto-fonts-cjk-sans
+    # pkgs.nerd-fonts.hack
     conda
     rofi
     brave
@@ -26,6 +27,8 @@
     blender
     # (blender.override { cudaSupport = true; })
     python314
+    uv
+    ffmpeg
   ];
 
   home.stateVersion = "23.11";
@@ -38,7 +41,10 @@
   imports = [
     ./apps
     ./options
+    "${fetchTarball "https://github.com/msteen/nixos-vscode-server/tarball/master"}/modules/vscode-server/home.nix"
   ];
+
+  services.vscode-server.enable = true;
 
   programs.home-manager.enable = true;
 }

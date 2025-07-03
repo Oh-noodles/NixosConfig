@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ inputs, config, pkgs, ... }:
+{ inputs, config, pkgs, lib, ... }:
 
 {
   imports =
@@ -130,12 +130,14 @@
     # nvidia-container-toolkit
 
     (nerdfonts.override { fonts = [ "Hack" ]; })
+    # nerd-fonts._0xproto
     # pkgs.nerd-fonts.hack
   ];
 
   fonts.packages = with pkgs; [
     noto-fonts-cjk-sans
     noto-fonts-cjk-serif
+    # nerd-fonts.hack
   ];
 
   fonts.fontconfig.antialias = true;
@@ -264,4 +266,6 @@
 		nvidiaBusId = "PCI:1:0:0";
                 # amdgpuBusId = "PCI:54:0:0"; For AMD GPU
 	};
+
+  # security.lsm = lib.mkForce [ ]; # make sure the distrobox container work well if it need selinux
 }
