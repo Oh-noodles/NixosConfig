@@ -24,11 +24,13 @@
     nodejs_23
     xclip # so we could copy from nvim to system clipboard
 
-    blender
+    # blender
     # (blender.override { cudaSupport = true; })
     python314
     uv
-    ffmpeg
+    # ffmpeg
+
+    remmina
   ];
 
   home.stateVersion = "23.11";
@@ -41,10 +43,8 @@
   imports = [
     ./apps
     ./options
-    "${fetchTarball "https://github.com/msteen/nixos-vscode-server/tarball/master"}/modules/vscode-server/home.nix"
   ];
 
-  services.vscode-server.enable = true;
 
   programs.home-manager.enable = true;
 }

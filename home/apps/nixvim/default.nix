@@ -40,6 +40,7 @@
       };
     };
     autoCmd = [
+      # register chortcut to delete buffer in telescope
       {
        event = [ "FileType" ];
        command = "lua require('telescope').setup({
@@ -51,6 +52,12 @@
             }
           }
         })";
+      }
+      # set filetype of .vs .fs files
+      {
+        event = [ "BufRead" "BufNewFile" ];
+        pattern = [ "*.vs" "*.fs" ];
+        command = "set filetype=glsl";
       }
     ];
   };

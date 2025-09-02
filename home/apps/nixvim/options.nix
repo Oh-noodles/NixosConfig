@@ -6,6 +6,7 @@
 
     autoindent = true;
     foldmethod = "indent";
+    foldlevel = 99;
     foldenable = false;
 
     expandtab = true;

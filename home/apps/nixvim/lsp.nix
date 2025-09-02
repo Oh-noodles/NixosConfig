@@ -8,6 +8,7 @@
         nixd.enable = true;
         html.enable = true;
         pylsp.enable = true;
+        glsl_analyzer.enable = true;
       };
       keymaps.lspBuf = {
         "gd" = "definition";

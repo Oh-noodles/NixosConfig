@@ -5,6 +5,10 @@
       action = "<CMD>NvimTreeToggle<CR>";
     }
     {
+      key = "<leader>w";
+      action = "<CMD>NvimTreeFindFile<CR>";
+    }
+    {
       key = "<leader>cf";
       action = "<CMD>lua vim.lsp.buf.format()<CR>";
       options.desc = "code format";
@@ -79,6 +83,18 @@
       key = ">";
       mode = [ "v" "n" "o" ];
       action = ">gv";
+    }
+    {
+      key = "<M-o>";
+      mode = [ "i" ];
+      action = "<cmd>lua require('luasnip').jump(1)<cr>";
+      options.desc = "jump next param";
+    }
+    {
+      key = "<M-u>";
+      mode = [ "i" ];
+      action = "<cmd>lua require('luasnip').jump(-1)<cr>";
+      options.desc = "jump prev param";
     }
   ];
 }
