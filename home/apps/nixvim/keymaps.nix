@@ -17,7 +17,18 @@
       key = "<leader>,";
       action = "<CMD>Telescope buffers sort_mru=true sort_lastused=true<CR>";
     }
-
+    {
+      key = "<leader>to";
+      action = "<CMD>TodoTelescope<CR>";
+    }
+    {
+      key = "<leader>td";
+      action = "<CMD>TodoTelescope keywords=TODO<CR>";
+    }
+    {
+      key = "<leader>tm";
+      action = "<CMD>TodoTelescope keywords=MARK<CR>";
+    }
     {
       key = "<C-h>";
       action = "<cmd>wincmd h<cr>";
