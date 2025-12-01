@@ -33,10 +33,11 @@
     # colorschemes.dracula = {
     colorschemes.cyberdream = {
       enable = true;
+      settings.theme.variant = "auto";
       settings.theme.highlights = {
         LineNr.fg = "#dbdbdb";
         # CursorLineNr.fg = "#ffffff";
-        CursorLine.bg = "#2d3036";
+        # CursorLine.bg = "#2d3036";
       };
     };
     autoCmd = [

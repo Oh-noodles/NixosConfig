@@ -14,6 +14,11 @@
       options.desc = "code format";
     }
     {
+      key = "<leader>bd";
+      action = "<CMD>%bd<CR>";
+      options.desc = "delete all buffers";
+    }
+    {
       key = "<leader>,";
       action = "<CMD>Telescope buffers sort_mru=true sort_lastused=true<CR>";
     }
