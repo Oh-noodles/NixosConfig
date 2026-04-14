@@ -17,6 +17,9 @@
     vscode
     simplescreenrecorder
     thunderbird
+    evince
+    gtk-engine-murrine
+    goldendict-ng
 
     gcc
     cmake
